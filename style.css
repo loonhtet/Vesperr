@@ -2,12 +2,25 @@
   --primary-color: #3498db;
 }
 
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
 /* Start Header  */
 
 /* Start nav bar Section  */
 
 .navbarcss {
   padding: 10px 0;
+  background: #fff;
   /* box-shadow: 0 0 8px 5px rgba(160, 160, 160, 0.2); */
 }
 
@@ -43,6 +56,16 @@
 
 .bannercss {
   margin-top: 300px;
+}
+
+.secpillcss {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.secpillcss:hover {
+  color: var(--bs-light);
+  background-color: var(--primary-color);
 }
 
 .herocss {
@@ -94,3 +117,32 @@
 }
 
 /* End client Area  */
+
+/* Start about us section */
+
+.linecss {
+  width: 60px;
+  height: 2px;
+  background-color: var(--primary-color);
+
+  margin: 0 12px;
+}
+
+#about i {
+  color: var(--primary-color);
+}
+
+/* End about us section */
+
+/* Start count area  */
+
+.countcss {
+  width: 500px;
+}
+
+@media (max-width: 576px) {
+  .countcss {
+    width: 300px;
+  }
+}
+/* End count area  */
