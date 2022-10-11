@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #3498db;
+}
+
+/* Start Header  */
+
+/* Start nav bar Section  */
+
+.navbarcss {
+  padding: 10px 0;
+  /* box-shadow: 0 0 8px 5px rgba(160, 160, 160, 0.2); */
+}
+
+.navbtncss {
+  color: var(--bs-dark);
+  opacity: 0.7;
+}
+
+.navbtncss:hover {
+  color: var(--primary-color);
+}
+
+.pillbtncss {
+  color: var(--bs-light);
+  background-color: var(--primary-color);
+  opacity: 0.9;
+
+  transition: all 0.3s;
+}
+
+.pillbtncss:hover {
+  color: var(--bs-light);
+  opacity: 1;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+/* End nav bar Section  */
+
+/* Start Banner Section  */
+
+.bannercss {
+  margin-top: 300px;
+  height: 50vh;
+}
+
+.herocss {
+  animation: heroimgani 3s linear infinite;
+}
+
+@keyframes heroimgani {
+  0% {
+    transform: translateY(5px);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 576px) {
+  .herocss {
+    width: 300px;
+  }
+}
+/* End Banner Section  */
+
+/* End Header  */
