@@ -181,8 +181,6 @@ body {
 /* Start services Section  */
 
 .servbox {
-  width: 24%;
-  /* margin-bottom: 10px; */
   padding: 20px 100px 20px 20px;
   border: 1px solid #eee;
 
@@ -196,6 +194,24 @@ body {
   overflow: hidden;
 
   transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+  .servbox {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .servbox {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .servbox {
+    width: 24%;
+  }
 }
 
 .servbox::before {
@@ -230,12 +246,6 @@ body {
 .servbox:hover i {
   color: var(--primary-color);
   background-color: #fff;
-}
-
-@media (max-width: 576px) {
-  .servbox {
-    width: 100%;
-  }
 }
 
 .servbox i {
@@ -274,12 +284,21 @@ body {
 /* Start card Area  */
 
 .card-group {
+  width: 49%;
   height: 400px;
+  margin-bottom: 20px;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   position: relative;
+}
+
+@media (max-width: 576px) {
+  .card-group {
+    width: 100%;
+  }
 }
 
 .card-group:hover .card-body {
