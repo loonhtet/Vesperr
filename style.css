@@ -334,3 +334,62 @@ body {
 }
 
 /* End card Area  */
+
+/* Start feature Section  */
+
+#features .featurebox {
+  padding: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+#features .featurebox i {
+  font-size: 40px;
+}
+
+#features .featurebox a {
+  font-weight: 500;
+  color: var(--bs-dark);
+}
+
+#features .featurebox a:hover {
+  color: var(--bs-primary);
+}
+/* End feature Section  */
+
+/* Start testimonials section  */
+
+.testbox {
+  width: 50%;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 0 8px 5px rgba(160, 160, 160, 0.2);
+
+  position: relative;
+}
+
+.testbox img {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #fff;
+
+  top: 20px;
+  left: -50px;
+  position: absolute;
+}
+
+.testboxcontain {
+  padding: 80px;
+}
+
+.small {
+  opacity: 0.5;
+}
+
+.testbox i {
+  color: lightgreen;
+  opacity: 0.3;
+}
+
+/* End testimonials section  */
