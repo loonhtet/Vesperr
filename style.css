@@ -2,16 +2,17 @@
   --primary-color: #3498db;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
-}
-
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 /* Start Header  */
@@ -55,7 +56,7 @@
 /* Start Banner Section  */
 
 .bannercss {
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .secpillcss {
@@ -69,6 +70,7 @@
 }
 
 .herocss {
+  width: 475px;
   animation: heroimgani 3s linear infinite;
 }
 
@@ -145,4 +147,126 @@
     width: 300px;
   }
 }
+
+.countbox {
+  width: 50%;
+  display: flex;
+
+  font-family: sans-serif;
+}
+
+@media (max-width: 576px) {
+  .countbox {
+    width: 100%;
+  }
+}
+
+.countbox i {
+  color: var(--primary-color);
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.countbox p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.countbox p span {
+  font-weight: 600;
+}
+
 /* End count area  */
+
+/* Start services Section  */
+
+.servbox {
+  width: 24%;
+  /* margin-bottom: 10px; */
+  padding: 20px 100px 20px 20px;
+  border: 1px solid #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px 0;
+  border-radius: 10px;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.3s;
+}
+
+.servbox::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  background-color: #3498db;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 0 0 100px;
+  opacity: 0.1;
+
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.servbox:hover {
+  color: #fff;
+}
+
+.servbox:hover::before {
+  border-radius: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  top: 0;
+  right: 0;
+}
+
+.servbox:hover i {
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  .servbox {
+    width: 100%;
+  }
+}
+
+.servbox i {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  display: grid;
+  place-items: center;
+  /* padding: 10px; */
+  border-radius: 50px;
+  color: #fff;
+  background: var(--primary-color);
+  transition: all 0.3s;
+}
+
+@media (max-width: 576px) {
+  .servbox i {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+  }
+}
+
+.servbox h4 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.servbox p {
+  font-size: 14px;
+}
+
+/* End services Section  */
