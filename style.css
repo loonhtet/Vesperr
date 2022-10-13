@@ -99,8 +99,10 @@ body {
 
 /* Start client Area  */
 
-#client {
-  height: 20vh;
+#client .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #client img {
@@ -405,37 +407,54 @@ body {
   .testbox img {
     position: initial;
   }
-
-  .swiper {
-    width: 800px;
-    height: 100%;
-  }
 }
-
-/* .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 
 /* End testimonials section  */
+
+/* Start team Section  */
+
+.cardbox {
+  border-radius: 0 0 5px 5px;
+}
+
+.cardbox .card-img {
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 0;
+}
+
+.cardbox .card-img img {
+  border-radius: 5px 5px 0 0;
+}
+
+.cardbox .socialbox {
+  cursor: default;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  color: var(--bs-dark);
+  background-color: #fff;
+  opacity: 0;
+  z-index: 1;
+
+  transition: all 0.5s;
+}
+
+.cardbox:hover .socialbox {
+  opacity: 1;
+}
+
+.cardbox .socialbox i {
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.cardbox .socialbox i:hover {
+  color: var(--primary-color);
+}
+
+/* End team Section  */
