@@ -434,7 +434,10 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--bs-dark);
   background-color: #fff;
   opacity: 0;
