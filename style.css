@@ -184,7 +184,7 @@ body {
 
 .servbox {
   padding: 20px 100px 20px 20px;
-  border: 1px solid #eee;
+  border: 1px solid var(--bs-light);
 
   display: flex;
   flex-direction: column;
@@ -447,11 +447,12 @@ body {
 }
 
 .cardbox:hover .socialbox {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .cardbox .socialbox i {
   cursor: pointer;
+  font-size: 24px;
   padding: 10px;
   transition: all 0.3s;
 }
@@ -461,3 +462,32 @@ body {
 }
 
 /* End team Section  */
+
+/* Start pricing Section  */
+
+#pricing ul li {
+  font-family: sans-serif;
+}
+
+#pricing ul li h2 {
+  color: var(--primary-color);
+}
+
+#pricing section div {
+  width: 30%;
+  background-color: var(--bs-light);
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  #pricing section div {
+    width: 100%;
+  }
+}
+
+#pricing section div:nth-child(2) {
+  border: 2px solid var(--primary-color);
+}
+
+/* End pricing Section  */
