@@ -18,7 +18,7 @@ body {
 /* Start Header  */
 
 header {
-  height: 68vh;
+  height: 67vh;
   position: relative;
 }
 
@@ -445,7 +445,7 @@ header {
 }
 
 .testboxcontain {
-  padding: 50px;
+  padding: 50px 100px;
 }
 
 .small {
