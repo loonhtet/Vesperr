@@ -507,3 +507,29 @@ body {
 }
 
 /* End FAQ Section  */
+
+/* Start contact Section  */
+
+#contact p {
+  display: inline-block;
+}
+
+#contact i {
+  float: left;
+  line-height: 1;
+  font-size: 35px;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+.contactsocialcss i {
+  cursor: pointer;
+}
+
+/* Start Footer  */
+
+#footer {
+  box-shadow: 0 0 8px 5px rgba(160, 160, 160, 0.2);
+}
+
+/* End Footer  */
