@@ -17,6 +17,11 @@ body {
 
 /* Start Header  */
 
+header {
+  height: 65vh;
+  position: relative;
+}
+
 /* Start nav bar Section  */
 
 .navbarcss {
@@ -35,9 +40,10 @@ body {
 }
 
 .pillbtncss {
+  font-weight: 500;
   color: var(--bs-light);
   background-color: var(--primary-color);
-  opacity: 0.9;
+  opacity: 0.8;
 
   transition: all 0.3s;
 }
@@ -56,12 +62,44 @@ body {
 /* Start Banner Section  */
 
 .bannercss {
-  margin-top: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.bannercss h1 {
+  animation: bannerleftani 0.8s ease-in-out backwards;
+}
+
+.bannercss p {
+  animation: bannerleftani 0.8s ease-in-out backwards;
+  animation-delay: 0.4s;
+}
+
+.bannercss button {
+  animation: bannerleftani 0.8s ease-in-out backwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes bannerleftani {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .secpillcss {
+  font-size: 22px;
+  font-weight: 500;
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  border: 3px solid var(--primary-color);
 }
 
 .secpillcss:hover {
@@ -70,21 +108,33 @@ body {
 }
 
 .herocss {
-  width: 475px;
-  animation: heroimgani 3s linear infinite;
+  width: 600px;
+  animation: heroimgani 3s linear 1s infinite, heroonceani 1s ease-in-out;
+}
+
+@keyframes heroonceani {
+  0% {
+    opacity: 0;
+    transform: translateX(150px) translateY(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+  }
 }
 
 @keyframes heroimgani {
   0% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-20px);
   }
 
   100% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
 
@@ -106,7 +156,7 @@ body {
 }
 
 #client img {
-  width: 100px;
+  width: 140px;
   filter: grayscale(100%);
 }
 
@@ -499,7 +549,9 @@ body {
 }
 
 #faq .row span {
+  display: inline-block;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 #faq .row i {
