@@ -491,3 +491,19 @@ body {
 }
 
 /* End pricing Section  */
+
+/* Start FAQ Section  */
+
+#faq .row {
+  border-bottom: 1px solid #eee;
+}
+
+#faq .row span {
+  margin-bottom: 10px;
+}
+
+#faq .row i {
+  color: var(--primary-color);
+}
+
+/* End FAQ Section  */
